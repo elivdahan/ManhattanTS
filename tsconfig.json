@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "compilation-output/",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "files": [
+        "Manhattan/ExampleServer.ts",
+        "Manhattan/Annotations.ts",
+        "Manhattan/RouteData.ts",
+        "Manhattan/ControllerData.ts",
+        "Manhattan/ExpressApi.ts",
+        "typings/express/express.d.ts",
+        "typings/body-parser/body-parser.d.ts",
+        "node_modules/reflect-metadata/reflect-metadata.d.ts"
+    ]
+}
