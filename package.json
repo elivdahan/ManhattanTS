@@ -1,0 +1,31 @@
+{
+  "name": "manhattan-ts",
+  "version": "1.0.0",
+  "description": "TypeScript & NodeJS based MVC framework",
+  "main": "compilation-output/Server.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "reflect-metadata": "^0.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elivdahan/ManhattanTS.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "MVC",
+    "express",
+    "TypeScript"
+  ],
+  "author": "ElivD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elivdahan/ManhattanTS/issues"
+  },
+  "homepage": "https://github.com/elivdahan/ManhattanTS#readme"
+}
