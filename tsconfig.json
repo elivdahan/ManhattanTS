@@ -5,15 +5,5 @@
         "outDir": "compilation-output/",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
-    },
-    "files": [
-      "manhattan-app/controllers/ExampleController.ts",
-      "manhattan-app/manhattan-core/Annotations.ts",
-      "manhattan-app/manhattan-core/RouteData.ts",
-      "manhattan-app/manhattan-core/ControllerData.ts",
-      "manhattan-app/manhattan-core/ExpressApi.ts",
-      "typings/express/express.d.ts",
-      "typings/body-parser/body-parser.d.ts",
-      "node_modules/reflect-metadata/reflect-metadata.d.ts"
-    ]
+    }
 }

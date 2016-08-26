@@ -36,7 +36,7 @@ let ExampleController = class ExampleController {
     index(name) {
         return __awaiter(this, void 0, void 0, function* () {
             var someNumber = yield getNumberFromDB();
-            return 'Hey' + name + ' , number from DB - ' + someNumber.toString();
+            return 'Hey' + name + '! , number from DB - ' + someNumber.toString();
         });
     }
     userMessage(name) {
