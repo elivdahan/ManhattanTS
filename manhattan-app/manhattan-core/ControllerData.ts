@@ -1,6 +1,7 @@
 import {RouteData} from './RouteData';
 
 export class ControllerData{
+
     urls : RouteData[] = [];
     
     controllerName : string;

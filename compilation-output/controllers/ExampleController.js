@@ -16,7 +16,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments)).next());
     });
 };
-const Annotations_1 = require('./Annotations');
+const Annotations_1 = require('../manhattan-core/Annotations');
 function getNumberFromDB() {
     return __awaiter(this, void 0, void 0, function* () {
         return new Promise(resolve => {
@@ -26,39 +26,45 @@ function getNumberFromDB() {
 }
 class Person {
 }
-let MyClass = class MyClass {
-    hello(x, y) {
+class Message {
+    constructor(userName, message) {
+        this.userName = userName;
+        this.message = message;
+    }
+}
+let ExampleController = class ExampleController {
+    index(name) {
         return __awaiter(this, void 0, void 0, function* () {
-            var dbData = yield getNumberFromDB();
-            return dbData + x + y;
+            var someNumber = yield getNumberFromDB();
+            return 'Hey' + name + ' , number from DB - ' + someNumber.toString();
         });
     }
-    hello2(x, y) {
-        return x + y;
+    userMessage(name) {
+        return new Message(name, 'Hello, World!');
     }
-    postMethod(person) {
+    sendUser(person) {
         return 'hello ' + person.fname + ' ' + person.sname;
     }
 };
 __decorate([
     Annotations_1.HTTP('GET'), 
     __metadata('design:type', Function), 
-    __metadata('design:paramtypes', [Number, Number]), 
+    __metadata('design:paramtypes', [String]), 
     __metadata('design:returntype', void 0)
-], MyClass.prototype, "hello", null);
+], ExampleController.prototype, "index", null);
 __decorate([
     Annotations_1.HTTP('GET'), 
     __metadata('design:type', Function), 
-    __metadata('design:paramtypes', [Number, Number]), 
+    __metadata('design:paramtypes', [String]), 
     __metadata('design:returntype', void 0)
-], MyClass.prototype, "hello2", null);
+], ExampleController.prototype, "userMessage", null);
 __decorate([
     Annotations_1.HTTP('POST'), 
     __metadata('design:type', Function), 
     __metadata('design:paramtypes', [Person]), 
     __metadata('design:returntype', void 0)
-], MyClass.prototype, "postMethod", null);
-MyClass = __decorate([
-    Annotations_1.Controller('MyClass'), 
+], ExampleController.prototype, "sendUser", null);
+ExampleController = __decorate([
+    Annotations_1.Controller('ExampleController'), 
     __metadata('design:paramtypes', [])
-], MyClass);
+], ExampleController);
